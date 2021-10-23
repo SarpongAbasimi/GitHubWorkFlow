@@ -14,7 +14,11 @@ lazy val core = (project in file("./modules/core"))
   testFrameworks += new TestFramework("weaver.framework.CatsEffect"),
   libraryDependencies ++= Seq(
     Libraries.catsEffect,
-    Libraries.weaverTest
+    Libraries.weaverTest,
+    Libraries.circeCore,
+    Libraries.circeGeneric,
+    Libraries.circeParser,
+    Libraries.circeGenericExtra
   )
 )
 
